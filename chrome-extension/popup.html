@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>QR Code</title>
+    <link rel="stylesheet" type="text/css" href="popup.css" />
+    <script src="qrcode.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+      <div id='tabs'><button class="inactive" id="login_tab">Login</button><button class="inactive" id="create_tab">Create</button><button class="inactive" id="qrcode_tab">QRCode</button><button id="close">X</button></div>
+      <div id="login" class="hidden">
+        <input type="text" name="username" id="login_uname"><br/>
+        <input type="password" name="pwd" id="login_pwd"><br/>
+        <button id="login_btn" class="insert">Login</button>
+      </div>
+      <div id="create" class="hidden">
+          <input type="text" name="username" id="reg_uname"><br/>
+          <input type="password" name="pwd" id="reg_pwd"><br/>
+          <button id="create_btn" class="insert">Register</button>
+      </div>
+      <div id="qrcode" class="hidden">
+          Client Token:
+          <div class="center">
+            <div id="insert-qrcode-here">
+              (please wait)
+            </div>
+            <div id="textbox">foo</div>
+          </div>
+      </div>
+      <div id="txt">waiting...</div>
+  </body>
+</html>

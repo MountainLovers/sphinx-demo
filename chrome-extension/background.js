@@ -1,12 +1,12 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyCY_0nlZH12LZSTkf3e8YFfH9GZ_8le3co",
-    authDomain: "sphinx-demo-d5cfe.firebaseapp.com",
-    databaseURL: "https://sphinx-demo-d5cfe.firebaseio.com",
-    projectId: "sphinx-demo-d5cfe",
-    storageBucket: "sphinx-demo-d5cfe.appspot.com",
-    messagingSenderId: "603051363245",
-    appId: "1:603051363245:web:9bec9ca4d743e0984eef24",
-    measurementId: "G-JSJTSLN0LB"
+    apiKey: "<yourconfig>",
+    authDomain: "<yourconfig>",
+    databaseURL: "<yourconfig>",
+    projectId: "<yourconfig>",
+    storageBucket: "<yourconfig>",
+    messagingSenderId: "<yourconfig>",
+    appId: "<yourconfig>",
+    measurementId: "<yourconfig>"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -16,7 +16,7 @@ firebase.analytics();
 const messaging = firebase.messaging();
 
 // Add the public key generated from the console here.
-messaging.usePublicVapidKey("BMc0SiJjwaDzMpnDOgg3tL0aGnF9qQ4lKLdcDnJlVLILr5KlhEgPTH059q-18l_YOLOSOKZGYVZMCCTHDOjkR74");
+messaging.usePublicVapidKey("<yourconfig>");
 
 /**********************START SPHINX-UTILS******************/
 const CryptoJS = require('crypto-js');
@@ -211,7 +211,7 @@ function sendMsgToDevice(type, data) {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://fcm.googleapis.com/fcm/send", false);
     xhr.setRequestHeader('Content-Type', 'application/json');
-    xhr.setRequestHeader('Authorization', 'key=AAAAjGipi60:APA91bExp6Dw6I33EZ-noe8UgeL3I06m2dLyINsIS6C835DSfzS6R8dJroE0cL31JEyDeHncYsHI-tRkWykB0Ji7aZimiRfhxmj_J9jb8cGBQiiyCgiKDACfc750Ffzrz_tMlEzP6ife');
+    xhr.setRequestHeader('Authorization', 'key=<yourconfig>');
     var msg = {};
     msg.type = type;
     msg.data = data;

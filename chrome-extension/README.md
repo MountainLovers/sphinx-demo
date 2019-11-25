@@ -21,9 +21,10 @@ SPHINX是一个口令管理系统，是"SPHINX: A password store that perfectly 
 ## 使用方法
 
 1. Clone本仓库到本地。
-
 2. 在Chrome浏览器中打开[Extension](chrome://extensions/)，并启动**Developer Mode**，选择Load unpacked，选择该仓库文件夹。
 3. 单击插件，使用配套APP扫描二维码后，即可注册/登录。推荐输入的密码将返回在插件popup界面。
+
+If you were a developer, please search all "<yourconfig>" and replace them with yours config. Then webpack again and re-generate "dist/background.js", because it will be included in "background.html". 
 
 ## 原理
 

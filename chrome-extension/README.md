@@ -16,7 +16,7 @@ SPHINX是一个口令管理系统，是"SPHINX: A password store that perfectly 
 - Client端。具体来说是一个Chrome Extension。在浏览器中运行此插件，理论上可以实现对用户的透明，插件自动检测用户的行为(注册/登录/修改密码)，并与其他设备(Android App)交互，完成操作。
 - Device端。请参考👉[sphinx-demo-app](https://github.com/MountainLovers/sphinx-demo-app).
 
-![](./brief-protocol.PNG)
+![](https://github.com/MountainLovers/sphinx-demo-web/blob/master/chrome-extension/brief-protocol.png)
 
 ## 使用方法
 
@@ -29,7 +29,7 @@ SPHINX是一个口令管理系统，是"SPHINX: A password store that perfectly 
 
 ### 协议流程
 
-![](./protocol.PNG)
+![](https://github.com/MountainLovers/sphinx-demo-web/blob/master/chrome-extension/protocol.png)
 
 ### 项目结构
 
